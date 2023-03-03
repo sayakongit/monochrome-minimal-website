@@ -70,7 +70,7 @@ nav {
 }
 
 .container {
-  max-width: 1060px;
+  max-width: 1160px;
   margin: 20px auto;
   padding: 0 40px;
 }
@@ -173,12 +173,37 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Story section styles  */
 
 .story {
   padding: 120px 0;
+}
+
+.story-area {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.story-item img {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.story-item h4 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.story-item p {
+  font-weight: 500;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #929ba8;
 }
 
 .top-footer {
