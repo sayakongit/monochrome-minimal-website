@@ -147,3 +147,30 @@ nav {
   cursor: pointer;
   margin-top: 36px;
 }
+
+.brands {
+  height: auto;
+  width: 100%;
+  padding: 140px 0;
+  color: white;
+  overflow: hidden;
+  background: #030303;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("../images/sample-light-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brands .underline {
+  background: #fff;
+}
+
+.brands-flex img {
+  height: 30px;
+}
+
+.brands-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
