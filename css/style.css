@@ -83,13 +83,13 @@ nav {
 }
 
 .hero .content {
-  width: 540px;
+  width: 50%;
 }
 
 .hero .content h3 {
   font-size: 3.8rem;
   line-height: 1.1;
-  width: 400px;
+  width: 60%;
 }
 
 .hero .content p {
@@ -260,4 +260,68 @@ footer img {
 footer p {
   font-size: 0.8rem;
   font-weight: 200;
+}
+
+@media only screen and (max-width: 860px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero .content {
+    width: 80%;
+  }
+
+  .hero .content h3 {
+    font-size: 2.8rem;
+    line-height: 1.1;
+    width: 70%;
+  }
+
+  .flex-area {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+  }
+
+  .heading {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+
+  .brands-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .story-area {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .top-footer {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 12px 20px;
+  }
+
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    display: none;
+  }
 }
