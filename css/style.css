@@ -136,7 +136,7 @@ nav {
   line-height: 1.9;
 }
 
-.flex-item button {
+.main-btn {
   background: #030303;
   padding: 12px 20px;
   color: #fff;
@@ -173,4 +173,46 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* Story section styles  */
+
+.story {
+  padding: 120px 0;
+}
+
+.top-footer {
+  background: rgb(1, 103, 204);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 103, 204, 1) 0%,
+    rgba(3, 199, 248, 1) 100%
+  );
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.top-footer h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.top-footer .main-btn {
+  margin: 0;
+  background: #fff;
+  color: #030303;
+  border: none;
+  outline: none;
+  padding: 14px 20px;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.top-footer .main-btn:hover {
+  color: #fff;
+  background: #030303;
 }
