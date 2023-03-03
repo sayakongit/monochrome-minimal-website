@@ -262,11 +262,54 @@ footer p {
   font-weight: 200;
 }
 
+.menu {
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 24px;
+  gap: 4px;
+}
+
+.menu div {
+  width: 32px;
+  height: 4px;
+  border-radius: 99px;
+  background: #242424;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+.menu.active div {
+  background: #242424;
+}
+
+nav .menu.active div:nth-child(1) {
+  transform: rotate(40deg);
+}
+
+nav .menu div:nth-child(3) {
+  transform-origin: left;
+}
+
+nav .menu.active div:nth-child(3) {
+  transform: rotate(-40deg);
+}
+
+nav .menu.active div:nth-child(2) {
+  transform: scale(0);
+}
+
 @media only screen and (max-width: 860px) {
   .container {
     padding: 0 20px;
   }
 
+  .menu {
+    display: flex;
+  }
   .hero .content {
     width: 80%;
   }
@@ -319,9 +362,23 @@ footer p {
   }
 
   .navbar ul {
-    display: flex;
     align-items: center;
     gap: 32px;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
     display: none;
+    height: 0;
+    background: #fff;
+    padding: 20px 0;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+
+  .navbar ul.active {
+    display: flex;
+    height: auto;
+    transition: 1s ease;
   }
 }
