@@ -216,3 +216,23 @@ nav {
   color: #fff;
   background: #030303;
 }
+
+footer {
+  background: #030303;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
+  gap: 10px;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer p {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
